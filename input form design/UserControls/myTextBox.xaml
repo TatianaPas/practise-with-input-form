@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="input_form_design.UserControls.myTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:input_form_design.UserControls"
+             mc:Ignorable="d" 
+             d:DesignWidth="200"
+             Background="white"
+             x:Name="myTextBox">
+    <StackPanel Margin="20 10">
+        <TextBlock Text="Hello" Foreground="#97a5b4"
+                   FontSize="13"
+                   Margin=" 0 0 0 8"/>
+        <Grid>
+            <TextBlock Margin="13 0" VerticalAlignment="Center" Foreground="#868686"
+                       IsHitTestVisible="False" Panel.ZIndex="1" FontSize="14" Text="hello" Visibility="Visible"/>
+            <TextBox Name="textBox"/>
+        </Grid>
+
+    </StackPanel>
+</UserControl>
